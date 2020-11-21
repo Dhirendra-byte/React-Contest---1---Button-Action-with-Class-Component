@@ -16,9 +16,8 @@ msg:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so 
     render() {
     	return(
     		<div id="main">
-				{ /* Do not remove this main div!! */ }
 				<p id="para">{this.state.msg}</p>
-			<button id="click" onClick={()=>this.Clicked()}>click here</button>
+			<button id="click" onClick={this.Clicked()}>click here</button>
     		</div>
     	);
     }
