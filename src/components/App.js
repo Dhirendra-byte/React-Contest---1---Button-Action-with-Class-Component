@@ -9,8 +9,12 @@ class App extends Component {
 
   Clicked() {
     this.setState({
-      msg:
-        "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
+      msg: (
+        <p id="para">
+          "Hello, I've learnt to use the full-stack evaluation tool. This makes
+          me so happy"
+        </p>
+      )
     });
   }
 
@@ -18,7 +22,7 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove this main div!! */}
-        <p id="para">{this.state.msg}</p>
+        {this.state.msg}
         <button id="click" onClick={() => this.Clicked()}>
           click here
         </button>
